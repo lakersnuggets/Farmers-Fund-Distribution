@@ -1,0 +1,336 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-image: url('pexels-tkirkgoz-11614527.jpg'); 
+  background-size: cover;
+  background-position: center;
+}
+
+.auth-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 500px; 
+  width: 100%;
+  text-align: center; 
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.auth-form .form-group {
+  margin-bottom: 1rem;
+  width: 100%; 
+  max-width: 400px; 
+}
+
+.auth-form .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #555;
+  text-align: left;
+}
+
+.auth-form .form-group input,
+.auth-form .form-group textarea {
+  width: 100%; 
+  padding: 10px; 
+  border-radius: 6px;
+  border: 1px solid #ddd; 
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  margin: 0 auto; 
+}
+
+.auth-form .form-group input:focus,
+.auth-form .form-group textarea:focus {
+  border-color: #4caf50; 
+  outline: none;
+}
+
+.auth-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  width: 100%; 
+  max-width: 400px; 
+  cursor: pointer;
+  margin-top: 10px;
+  margin: 0 auto; 
+  transition: background-color 0.3s;
+}
+
+.auth-button:hover {
+  background-color: #45a049; 
+}
+
+.auth-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.auth-toggle span {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.homepage h1, .homepage p {
+  margin: 0;
+  padding: 10px;
+}
+
+.auth-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.auth-button .loader {
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid transparent;
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+.auth-button:disabled {
+  cursor: not-allowed;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-list li {
+  display: inline;
+}
+
+.navbar-list a,
+.logout-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navbar-list a:hover,
+.logout-link:hover {
+  color: #ddd;
+}
+
+.admin-content{
+  text-align: center; 
+  margin-top: 0px;
+}
+
+/* adminhomepage schemes */
+
+
+.admin-content {
+  padding: 20px;
+}
+
+.scheme-form {
+  margin-bottom: 30px;
+}
+
+.scheme-form input, .scheme-form textarea, .scheme-form select {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+}
+
+.schemes-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.schemes-table th, .schemes-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.schemes-table button {
+  margin-right: 5px;
+}
+
+
+/* admin homepage  */ 
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+/* Page Layout */
+.admin-home-page {
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  gap: 0px;
+  
+}
+
+/* Schemes Table */
+.schemes-table {
+  flex: 3;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.schemes-table h2 {
+  margin-bottom: 10px;
+}
+
+.schemes-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.schemes-table th,
+.schemes-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.schemes-table th {
+  background-color: #f2f2f2;
+}
+
+.schemes-table button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.schemes-table button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+/* Edit Form */
+.edit-form {
+  flex: 2;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.edit-form h2 {
+  margin-top: 0;
+}
+
+.edit-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.edit-form input,
+.edit-form textarea {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.edit-form textarea {
+  height: 60px;
+}
+
+/*for the table homepage users side to display schemes*/
+
+
+.right-column{
+  text-align: center;
+}
+
+
+
